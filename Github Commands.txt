@@ -1,0 +1,63 @@
+-------------------------Local Repo--------------------------
+
+git init                                                          //initalize repo
+
+git status
+
+git add filename
+
+git diff filename
+
+git commit -m "First Commit"
+
+git log                                                          //check all the changes made to the project
+
+
+
+------------------------Remote Repo--------------------------
+
+cd foldername
+
+git clone httpslink (or) git clone repo_name foldername          //clone repo
+
+git config --global user.email "email id"                        //set email id
+
+git config --global user.name "username"                         //set username
+
+cd repo_name/
+
+git add .                                                        //prepare file for commit
+
+git commit -m "First Commit"
+
+git pull
+git push
+
+git push origin branch_name                                      //if multipe branches exist
+
+
+----------------------Common Git Commands-----------------------
+
+git show HEAD                                                 //shows the latest commit
+
+git checkout HEAD filename                                    //restore file to last commited state(Discards the new changes)
+
+git reset HEAD filename                                       //remove a file from the stagging stage
+
+git reset sha(7 first characters)                             //return to a particular commit stage
+
+git branch                                                    //check current branch
+
+git branch name                                               //create a new branch
+
+git checkout name                                             //change current branch
+
+git merge name                                                //merge a branch
+
+git branch -d name                                            //delete a branch
+
+git remote -v                                                 //see files on origin(remote repo)
+
+git fetch                                                     //check for changes in the origin branch
+
+git merge origin/master                                       //merge local and remote repo
