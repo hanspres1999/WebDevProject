@@ -16,59 +16,82 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2" style="border-right:2px solid;">
+                <br><br><br><br>
+                <h2>Menu</h2>
                 <br>
-                <table class="table table-borderless">
-                    <thead>
-                        <tr>
-                            <th style="font-size:40px;">
-                                <center>Menu</center>
-                            </th>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <center><button type="button" class="btn btn-outline-secondary">New Patient Form</button></center>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <center><button type="button" class="btn btn-outline-secondary">Patient Database</button></center>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <center><button type="button" class="btn btn-outline-secondary">Medicines</button></center>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <center><button type="button" class="btn btn-outline-secondary">Reminder</button></center>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <!-- Nav pills -->
+                <ul class="nav nav-pills flex-column" role="tablist">
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#home">New Patient Details</a>
+                    </li>
+                    <br><br>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu1">Patient Database</a>
+                    </li>
+                    <br><br>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu2">Medicines</a>
+                    </li>
+                    <br><br>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu3">Reminders</a>
+                    </li>
+                    <li><br></li>
+                    <li><br></li>
+                    <li><br></li>
+                    <li><br></li>
+                    <li><br></li>
+                    <li><br></li>
+                </ul>
+
             </div>
-            <div class="col-md-10 border">
-
-                <table class="table table-borderless"></table>
-
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active"><br>
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th style="font-size:30px;" colspan="2">
+                                        <center>Patient Details</center>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td align="right"><label for="name" style="font-size:22px;">Name :</label></td>
+                                    <td><input type="text" class="form-control" id="name" placeholder="Enter Patient Name"
+                                            name="name"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="pid" style="font-size:22px;">PID :</label></td>
+                                    <td><input type="number" class="form-control" id="pid" placeholder="Enter PID" name="pid"></td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><label for="symptoms" style="font-size:22px;">Symptoms :</label></td>
+                                    <td><textarea class="form-control" rows="5" id="symptoms" name="text"></textarea></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="menu1" class="container tab-pane fade"><br>
+                        <h3>Menu 1</h3>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</p>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade"><br>
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                </div>
             </div>
 
         </div>
+
+    </div>
     </div>
 </body>
 
