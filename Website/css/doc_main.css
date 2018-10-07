@@ -15,7 +15,7 @@ body {
 
 #main {
     padding: 4% 1.5em;
-    max-width: 55em;
+    max-width: 65em;
     margin: 0 auto;
 }
 
@@ -35,8 +35,8 @@ body {
 
 
 .primary-nav {
-    position: fixed;
-    z-index: 999;
+    position: flex;
+    width: 100%;
 }
 
 .menu {
@@ -159,8 +159,8 @@ input#menu[type="checkbox"] {
 
 .new-wrapper {
     position: absolute;
-    left: 50px;
-    width: calc(100% - 50px);
+    left: 40px;
+    width: calc(100% - 80px);
     transition: transform .45s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -217,7 +217,7 @@ input#menu[type="checkbox"] {
 
 .overflow-container {
     position: relative;
-    height: calc(100vh - 73px) !important;
+    height: calc(100vh - 10px) !important;
     overflow-y: auto;
     border-top: 73px solid #fff;
     z-index: -1;
@@ -258,29 +258,18 @@ input#menu[type="checkbox"] {
 .openNav .menu:hover {
     position: absolute;
     left: -200px;
-    top 73px;
+    top: 73px;
 }
 
 .openNav .menu {
-    top 73px;
+    top: 73px;
     transform: translate3d(200px, 0, 0);
     transition: transform .45s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-/* label.hamburger {
-        display: none;
-    } */
-
-
-
-
-
-
-
-
-
-
-
+label.hamburger {
+    display: none;
+}
 
 
 /* look and feel only, not needed for core menu*/
@@ -457,8 +446,6 @@ blockquote {
     padding: 0 1em;
     position: relative;
 }
-
-blockquote:before {}
 
 blockquote cite,
 blockquote em,
