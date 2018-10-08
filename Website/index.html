@@ -11,7 +11,7 @@
   <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/index.css">
   <style>
-  body {
+    body {
     background-image: url('/assets/images/2.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,137 +19,137 @@
   </style>
 </head>
 
-<body>
+<body style="background-image:url('assets/images/2.jpeg')">
 
   <div class=" container">
-  <div id="top_nav">
-    <br><br><br>
+    <div id="top_nav">
+      <br><br><br>
+      <center>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item shadow-sm p-0 mb-0 bg-white rounded">
+              <a class="nav-link active" data-toggle="tab" href="#menu1">Doctor Login</a>
+            </li>
+            <li class="nav-item shadow-sm p-0 mb-0 bg-white rounded">
+              <a class="nav-link" data-toggle="tab" href="#home">Patient Login</a>
+            </li>
+            <li class="nav-item shadow-sm p-0 mb-0 bg-white rounded">
+              <a class="nav-link" data-toggle="tab" href="#menu2">Medical Assistant</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2"></div>
+      </center>
+    </div>
+
+    <!-- Tab panes -->
     <center>
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="nav-item shadow-sm p-0 mb-0 bg-white rounded">
-            <a class="nav-link active" data-toggle="tab" href="#home">Patient Login</a>
-          </li>
-          <li class="nav-item shadow-sm p-0 mb-0 bg-white rounded">
-            <a class="nav-link" data-toggle="tab" href="#menu1">Doctor Login</a>
-          </li>
-          <li class="nav-item shadow-sm p-0 mb-0 bg-white rounded">
-            <a class="nav-link" data-toggle="tab" href="#menu2">Medical Assistant</a>
-          </li>
-        </ul>
+        <div class="tab-content shadow-lg p-0 mb-0 bg-white rounded border border-dark">
+          <div id="home" class="container tab-pane fade show active"><br>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  <div class="container">
+                    <h2 align="left">Login</h2>
+                    <p align="left">Enter Login Details</p>
+                    <form action="">
+                      <table class="table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td><label for="pid">PID :</label></td>
+                            <td><input type="text" class="form-control" id="pid" placeholder="Enter PID" name="pid"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="password">Password :</label></td>
+                            <td><input type="password" class="form-control" id="password" placeholder="Enter Password"
+                                name="password"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button type="submit" class="btn btn-primary btn-md" style="margin-right: 80px;margin-left: 100px;">Submit</button>
+                      <button type="reset" class="btn btn-primary btn-md">Reset</button>
+                    </form>
+                    <br><br><br>
+                  </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="menu1" class="container tab-pane fade"><br>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  <div class="container">
+                    <h2 align="left">Login</h2>
+                    <p align="left">Enter Login Details</p>
+                    <form action="">
+                      <table class="table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td><label for="username">Username :</label></td>
+                            <td><input type="text" class="form-control" id="pid" placeholder="Enter Username" name="username"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="password">Password :</label></td>
+                            <td><input type="password" class="form-control" id="password" placeholder="Enter Password"
+                                name="password"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button type="submit" class="btn btn-primary btn-md" style="margin-right: 80px;margin-left: 100px;">Submit</button>
+                      <button type="reset" class="btn btn-primary btn-md">Reset</button>
+                    </form>
+                    <br><br><br>
+                  </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="menu2" class="container tab-pane fade"><br>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  <div class="container">
+                    <h2 align="left">Login</h2>
+                    <p align="left">Enter Login Details</p>
+                    <form action="">
+                      <table class="table table-borderless">
+                        <tbody>
+                          <tr>
+                            <td><label for="username">Asst. Username :</label></td>
+                            <td><input type="text" class="form-control" id="username" placeholder="Enter Username" name="username"></td>
+                          </tr>
+                          <tr>
+                            <td><label for="password">Password :</label></td>
+                            <td><input type="password" class="form-control" id="password" placeholder="Enter Password"
+                                name="password"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button type="submit" class="btn btn-primary btn-md" style="margin-right: 80px;margin-left: 100px;">Submit</button>
+                      <button type="reset" class="btn btn-primary btn-md">Reset</button>
+                    </form>
+                    <br><br><br>
+                  </div>
+                </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
       </div>
-      <div class="col-md-2"></div>
     </center>
-  </div>
-
-  <!-- Tab panes -->
-  <center>
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
-      <div class="tab-content shadow-lg p-0 mb-0 bg-white rounded border border-dark">
-        <div id="home" class="container tab-pane fade show active"><br>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-8">
-                <div class="container">
-                  <h2 align="left">Login</h2>
-                  <p align="left">Enter Login Details</p>
-                  <form action="">
-                    <table class="table table-borderless">
-                      <tbody>
-                        <tr>
-                          <td><label for="pid">PID :</label></td>
-                          <td><input type="text" class="form-control" id="pid" placeholder="Enter PID" name="pid"></td>
-                        </tr>
-                        <tr>
-                          <td><label for="password">Password :</label></td>
-                          <td><input type="password" class="form-control" id="password" placeholder="Enter Password"
-                              name="password"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <button type="submit" class="btn btn-primary btn-md" style="margin-right: 80px;margin-left: 100px;">Submit</button>
-                    <button type="reset" class="btn btn-primary btn-md">Reset</button>
-                  </form>
-                  <br><br><br>
-                </div>
-              </div>
-              <div class="col-md-2"></div>
-            </div>
-          </div>
-        </div>
-
-        <div id="menu1" class="container tab-pane fade"><br>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-8">
-                <div class="container">
-                  <h2 align="left">Login</h2>
-                  <p align="left">Enter Login Details</p>
-                  <form action="">
-                    <table class="table table-borderless">
-                      <tbody>
-                        <tr>
-                          <td><label for="username">Username :</label></td>
-                          <td><input type="text" class="form-control" id="pid" placeholder="Enter Username" name="username"></td>
-                        </tr>
-                        <tr>
-                          <td><label for="password">Password :</label></td>
-                          <td><input type="password" class="form-control" id="password" placeholder="Enter Password"
-                              name="password"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <button type="submit" class="btn btn-primary btn-md" style="margin-right: 80px;margin-left: 100px;">Submit</button>
-                    <button type="reset" class="btn btn-primary btn-md">Reset</button>
-                  </form>
-                  <br><br><br>
-                </div>
-              </div>
-              <div class="col-md-2"></div>
-            </div>
-          </div>
-        </div>
-
-        <div id="menu2" class="container tab-pane fade"><br>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-2"></div>
-              <div class="col-md-8">
-                <div class="container">
-                  <h2 align="left">Login</h2>
-                  <p align="left">Enter Login Details</p>
-                  <form action="">
-                    <table class="table table-borderless">
-                      <tbody>
-                        <tr>
-                          <td><label for="username">Asst. Username :</label></td>
-                          <td><input type="text" class="form-control" id="username" placeholder="Enter Username" name="username"></td>
-                        </tr>
-                        <tr>
-                          <td><label for="password">Password :</label></td>
-                          <td><input type="password" class="form-control" id="password" placeholder="Enter Password"
-                              name="password"></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <button type="submit" class="btn btn-primary btn-md" style="margin-right: 80px;margin-left: 100px;">Submit</button>
-                    <button type="reset" class="btn btn-primary btn-md">Reset</button>
-                  </form>
-                  <br><br><br>
-                </div>
-              </div>
-              <div class="col-md-2"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2"></div>
-    </div>
-  </center>
   </div>
 
 </body>
