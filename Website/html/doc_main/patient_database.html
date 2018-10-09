@@ -1,3 +1,31 @@
-<h3>Patient Database</h3>
-<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat.</p>
+<div class="shadow-lg p-0 mb-5 bg-light rounded">
+    <form action="">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th style="font-size:30px;" colspan="2">
+                        <center>Patient Information</center>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td align="center"><label for="name" style="font-size:22px;">Name :</label></td>
+                    <td><input type="text" class="form-control" id="name" placeholder="Enter Patient Name" name="name"></td>
+                </tr>
+                <tr>
+                    <td align="center"><label for="pid" style="font-size:22px;">PID :</label></td>
+                    <td><input type="number" class="form-control" id="pid" placeholder="Enter PID" name="pid"></td>
+                </tr>
+                <tr>
+                    <td align="center"><label for="info" style="font-size:22px;">Patient History :</label></td>
+                    <td><textarea class="form-control" rows="15" id="info" name="text" placeholder="Information"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <center><button type="submit" class="btn btn-primary btn-md button-block" style="margin-right: 100px;">Submit</button>
+            <button type="reset" class="btn btn-primary btn-md button-block">Reset</button></center>
+    </form>
+    <br>
+</div>

@@ -1,3 +1,64 @@
-<h3>Medicines go here</h3>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-    laudantium, totam rem aperiam.</p>
+<head>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container shadow-lg p-0 mb-0 bg-light rounded">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item shadow-sm">
+                <a class="nav-link active" data-toggle="tab" href="#home">New Medicine</a>
+            </li>
+            <li class="nav-item shadow-sm">
+                <a class="nav-link" data-toggle="tab" href="#menu1">Medicine Database</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <td align="center"><label for="medicine" style="font-size:22px;">Medicine :</label></td>
+                            <td><input type="text" class="form-control" id="medicine" placeholder="Enter Medicine Name"
+                                    name="medicine"></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><label for="mid" style="font-size:22px;">MID :</label></td>
+                            <td><input type="text" class="form-control" id="mid" placeholder="Enter MID" name="mid"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <center><button type="submit" class="btn btn-primary btn-md button-block" style="margin-right: 100px;">Submit</button></center>
+                <br>
+            </div>
+
+            <div id="menu1" class="container tab-pane fade"><br>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <td align="center"><label for="medicine" style="font-size:22px;">Medicine :</label></td>
+                            <td><input type="text" class="form-control" id="medicine" placeholder="Enter Medicine Name"
+                                    name="medicine"></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><label for="mid" style="font-size:22px;">MID :</label></td>
+                            <td><input type="text" class="form-control" id="mid" placeholder="Enter MID" name="mid"></td>
+                        </tr>
+                        <tr>
+                            <td align="center"><label for="info" style="font-size:22px;">Medicine Information :</label></td>
+                            <td><textarea class="form-control" rows="15" id="info" name="text" placeholder="Medicine Information"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <center><button type="submit" class="btn btn-primary btn-md button-block" style="margin-right: 100px;">Submit</button></center>
+                <br>
+            </div>
+        </div>
+    </div>
+</body>

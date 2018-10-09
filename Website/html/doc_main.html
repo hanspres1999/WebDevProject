@@ -8,45 +8,50 @@
   <link rel="stylesheet" href="../css/doc_main.css">
   <link rel="stylesheet" href="../css/reminder.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <script src="../js/bootstrap.min.js"></script>
-</head>
 
-<body style="background-color:rgb(255, 220, 220)">
+  <head>
 
-  <div class="primary-nav" style="position: fixed;z-index: 1;">
-    <button href="#" class="hamburger open-panel"> <span class="screen-reader-text">Menu</span></button>
-    <nav role="navigation" class="menu"> <a href="#" class="logotype">MAIN<span> MENU</span></a>
-      <div class="overflow-container">
-        <ul id="bar">
-          <li><a href="new_patient">New Patient</a><span class="icon"><i class="fas fa-user-plus"></i></span></li>
-          <li><br></li>
-          <li><a href="patient_database">Patient Database</a><span class="icon"><i class="fas fa-user"></i></span></li>
-          <li><br></li>
-          <li><a href="medicines">Medicines</a><span class="icon"><i class="fas fa-pills"></i></span></li>
-          <li><br></li>
-          <li><a href="reminders">Reminders</a><span class="icon"><i class="fas fa-bell"></i></span></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+  <body style="background-color:rgb(240, 232, 232)">
 
-  <div class="new-wrapper">
-    <div id="main">
-      <div id="main-contents"></div>
+    <div class="primary-nav position-fixed" style="z-index: 1;">
+      <button href="#" class="hamburger open-panel"> <span class="screen-reader-text">Menu</span></button>
+      <nav role="navigation" class="menu"> <a href="#" class="logotype">MAIN<span> MENU</span></a>
+        <div class="overflow-container">
+          <ul id="bar">
+            <li><a href="new_patient">New Patient</a><span class="icon"><i class="fas fa-user-plus"></i></span></li>
+            <li><br></li>
+            <li><a href="patient_database">Patient Database</a><span class="icon"><i class="fas fa-user"></i></span></li>
+            <li><br></li>
+            <li><a href="medicines">Medicines</a><span class="icon"><i class="fas fa-pills"></i></span></li>
+            <li><br></li>
+            <li><a href="reminders">Reminders</a><span class="icon"><i class="fas fa-bell"></i></span></li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </div>
 
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/doc_main.js"></script>
-  <script>
-    $('.nav-toggle').click(function (e) {
 
-      e.preventDefault();
-      $("html").toggleClass("openNav");
-      $(".nav-toggle").toggleClass("active");
+    <div class="new-wrapper">
+      <div id="main">
+        <div id="main-contents"></div>
+      </div>
+    </div>
 
-    });
-  </script>
-</body>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/doc_main.js"></script>
+
+    <script>
+      $('.nav-toggle').click(function (e) {
+
+        e.preventDefault();
+        $("html").toggleClass("openNav");
+        $(".nav-toggle").toggleClass("active");
+
+      });
+    </script>
+
+  </body>
 
 </html>
