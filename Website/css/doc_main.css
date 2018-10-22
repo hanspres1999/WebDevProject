@@ -102,7 +102,7 @@ body {
     pointer-events: none;
     width: 24px;
     height: 24px;
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 .menu,
@@ -121,7 +121,7 @@ body {
 }
 
 .menu a:hover {
-    color: #fff;
+    color: rgb(255, 255, 255);
 }
 
 .menu {

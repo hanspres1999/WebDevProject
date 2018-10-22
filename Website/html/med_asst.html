@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Medical Asst. View</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+        #main {
+            padding: 4% 1.5em;
+            max-width: 65em;
+            margin: 0 auto;
+        }
+    </style>
+
+    <head>
+
+    <body style="background-color:rgb(190, 190, 190)">
+
+        <div></div>
+
+        <div class="container" id="main">
+            <div class="shadow-lg p-0 mb-5 bg-light rounded">
+                <form action="">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="font-size:30px;" colspan="2">
+                                    <center>New Patient Registeration</center>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center"><label for="name" style="font-size:22px;">Full Name :</label></td>
+                                <td><input type="text" class="form-control" id="name" placeholder="Enter Patient Name"
+                                        name="name"></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><label for="pid" style="font-size:22px;">PID :</label></td>
+                                <td><input type="number" class="form-control" id="pid" placeholder="Enter PID" name="pid"></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><label for="age" style="font-size:22px;">Age :</label></td>
+                                <td><input type="number" class="form-control" id="age" placeholder="Enter Age" name="age"></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><label for="mail" style="font-size:22px;">E-Mail :</label></td>
+                                <td><input type="text" class="form-control" id="mail" placeholder="Enter E-Mail" name="mail"></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><label for="contact" style="font-size:22px;">Contact No. :</label></td>
+                                <td><input type="number" class="form-control" id="contact" placeholder="Enter Contact No."
+                                        name="age"></td>
+                            </tr>
+                            <tr>
+                                <td align="center"><label for="address" style="font-size:22px;">Address :</label></td>
+                                <td><textarea class="form-control" rows="5" id="address" name="text" placeholder="Enter Address"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <center><button type="submit" class="btn btn-primary btn-md button-block" style="margin-right: 100px;">Submit</button>
+                        <button type="reset" class="btn btn-primary btn-md button-block">Reset</button></center>
+                </form>
+                <br>
+            </div>
+        </div>
+
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jquery.min.js"></script>
+    </body>
+
+</html>
