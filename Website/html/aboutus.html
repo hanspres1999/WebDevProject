@@ -17,6 +17,12 @@
         }
 
         .parallax {
+            /* The image used */
+
+            /* Full height */
+            height: 70%;
+
+            /* Create the parallax scrolling effect */
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -26,7 +32,7 @@
         .caption {
             position: absolute;
             left: 0;
-            top: 25%;
+            top: 45%;
             width: 100%;
             text-align: center;
             color: #000;
@@ -52,7 +58,8 @@
 </head>
 
 <body>
-    <div class="parallax" style="background-image: url('/assets/images/aboutus.jpg');height: 50%;" id="top">
+    </div>
+    <div class="parallax" style="background-image: url('/assets/images/aboutus.jpg');">
         <div class="caption"><span class="border" style="opacity:0.9;">About Us</span></div>
     </div>
 
@@ -72,30 +79,9 @@
 
     </div>
 
-    <div class="parallax" style="background-image: url('/assets/images/aboutus2.jpg');height: 50%;"></div>
 
-    <div style="background-color:rgb(224, 224, 224);padding: 50px 50px;height: 400px;opacity: 0.7;">
-        <center>
-            <p style="font-size:35px;font-weight:bold;">Our Goal</p>
-        </center>
-    </div>
+    <div class="parallax" style="background-image: url('/assets/images/aboutus2.jpg');"></div>
 
-    <div class="parallax" style="background-image: url('/assets/images/aboutus.jpg');height: 50%;"></div>
-
-    <footer class="page-footer font-small blue pt-4" style="background-color:black;">
-        <div class="container-fluid text-center text-md-left">
-            <center style="color:beige;">
-                <h5 class="text-uppercase">Footer Content</h5>
-                <p>This is a sample footer. More data needs to be added here</p>
-                <p><a href="#top">Back to Top</a>&emsp;|&emsp;<a href="/index.html">Login In</a></p>
-            </center>
-        </div>
-        <div class="footer-copyright text-center py-3" style="color:rgb(63, 63, 63);">
-            <hr style="border-color:rgb(255, 255, 255);">
-            &copy 2018 footer-copyright
-            <a href="">Example.com</a>
-        </div>
-    </footer>
 </body>
 
 </html>
