@@ -16,7 +16,7 @@ if ($conn->connect_error) {
     
    $pass=$_POST["password"];
   
-   $result = mysqli_query($conn, "select * from Doctor where Login_ID='$usr' && Passwd='$pass'");
+   $result = mysqli_query($conn, "select * from Assistant where Login_ID='$usr' && Passwd='$pass'");
  
  if(mysqli_num_rows($result) > 0)
  { 

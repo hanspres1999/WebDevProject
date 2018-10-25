@@ -17,7 +17,7 @@ if ($conn->connect_error) {
  $result = mysqli_query($conn, "SELECT * FROM Doctor WHERE Login_ID = '$id'"); 
  if(mysqli_num_rows($result) > 0)
  { 
- echo "ID already exist";
+ echo "Successfully Signed In";
  return;
  } 
  else

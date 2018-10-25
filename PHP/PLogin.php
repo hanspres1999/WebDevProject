@@ -12,11 +12,11 @@ if ($conn->connect_error) {
 } 
 
     
-   $usr=$_POST["username"];
+   $usr=$_POST["pid"];
     
    $pass=$_POST["password"];
   
-   $result = mysqli_query($conn, "select * from Doctor where Login_ID='$usr' && Passwd='$pass'");
+   $result = mysqli_query($conn, "select * from Patient where Login_ID='$usr' && Passwd='$pass'");
  
  if(mysqli_num_rows($result) > 0)
  { 
