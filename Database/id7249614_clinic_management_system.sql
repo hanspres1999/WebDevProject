@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 23, 2018 at 05:37 PM
+-- Generation Time: Oct 25, 2018 at 11:10 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.0.26
 
@@ -30,9 +30,16 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `Doctor` (
   `Login_ID` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `Email_ID` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `Passwd` varchar(10) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `Doctor`
+--
+
+INSERT INTO `Doctor` (`Login_ID`, `Passwd`) VALUES
+('', ''),
+('hhhhhhh', '45454545');
 
 -- --------------------------------------------------------
 
