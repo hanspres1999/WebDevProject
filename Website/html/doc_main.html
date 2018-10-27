@@ -9,13 +9,33 @@
   <link rel="stylesheet" href="../css/reminder.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 
+  <style>
+    #background {
+      position: absolute;
+      z-index: -1;
+      background: rgba(255, 255, 255, 0.001);
+      display: block;
+      min-height: 50%;
+      min-width: 50%;
+      color: yellow;
+    }
+
+    #bg-text {
+      padding-top: 10%;
+      padding-left: 15%;
+      color: lightgrey;
+      font-size: 100px;
+      transform: rotate(-15deg);
+    }
+  </style>
+
   <head>
 
   <body style="background-color:rgb(240, 232, 232)">
 
     <div class="primary-nav position-fixed" style="z-index: 1;">
-      <button href="#" class="hamburger open-panel"> <span class="screen-reader-text">Menu</span></button>
-      <nav role="navigation" class="menu"> <a href="#" class="logotype">MAIN<span> MENU</span></a>
+      <button href="#" class="hamburger open-panel"> <span class="screen-reader-text">DSH</span></button>
+      <nav role="navigation" class="menu"> <a href="#" class="logotype">DSH<span> Group</span></a>
         <div class="overflow-container">
           <ul id="bar">
             <li><a href="new_patient">New Patient</a><span class="icon"><i class="fas fa-user-plus"></i></span></li>
