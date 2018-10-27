@@ -21,13 +21,52 @@
     }
 
     #bg-text {
-      padding-top: 10%;
-      padding-left: 15%;
+      padding-top: 20%;
+      padding-left: 20%;
       color: lightgrey;
       font-size: 100px;
-      transform: rotate(-15deg);
+      transform: rotate(-20deg);
+    }
+
+    .form-rounded {
+      border-radius: 1rem;
     }
   </style>
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/doc_main.js"></script>
+  <script src="/js/bootbox.min.js"></script>
+  <script>
+    $('.nav-toggle').click(function (e) {
+
+      e.preventDefault();
+      $("html").toggleClass("openNav");
+      $(".nav-toggle").toggleClass("active");
+
+    });
+
+    $(document).on('click', '#prompt', function (event) {
+      bootbox.confirm({
+        message: "Do you really want to Logout ?",
+        buttons: {
+          cancel: {
+            label: '<i class="fa fa-times"></i> Cancel',
+            className: 'btn-success'
+          },
+          confirm: {
+            label: '<i class="fa fa-check"></i> Confirm',
+            className: 'btn-danger',
+          }
+        },
+        callback: function (result) {
+          if (result) {
+            window.open("/index.html", "_self");
+          }
+        }
+      });
+    });
+  </script>
 
   <head>
 
@@ -46,9 +85,10 @@
             <li><br></li>
             <li><a href="reminders">Reminders</a><span class="icon"><i class="fas fa-bell"></i></span></li>
             <li><br></li>
-            <li><a href="index">Logout</a><span class="icon"><i class="fas fa-sign-out-alt"></i></span></li>
-            <li><br></li>
           </ul>
+          <ol id="bar" style="list-style:none;padding:0px;">
+            <li><a href="#" id="prompt">Logout</a><span class="icon"><i class="fas fa-sign-out-alt"></i></span></li>
+          </ol>
         </div>
       </nav>
     </div>
@@ -58,22 +98,6 @@
         <div id="main-contents"></div>
       </div>
     </div>
-
-
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/doc_main.js"></script>
-
-    <script>
-      $('.nav-toggle').click(function (e) {
-
-        e.preventDefault();
-        $("html").toggleClass("openNav");
-        $(".nav-toggle").toggleClass("active");
-
-      });
-    </script>
-
   </body>
 
 </html>
