@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" href="../css/all.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -22,10 +23,27 @@
     .form-rounded {
     border-radius: 1rem;
     }
+
+    span{
+      position: absolute;
+      margin-left: 5px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+    }
+    input{
+      padding-left: 25px;
+      height: 20px;
+    }
+
+    td {
+      font-weight: bolder;
+      color: #111;
+    }
   </style>
 </head>
 
-<body style="background-image:url('assets/images/2.jpeg')">
+<body style="background-image:url('assets/images/1.jpeg')">
 
 
   <div class=" container">
@@ -35,13 +53,13 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
           <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item shadow-sm p-0 mb-0 bg-white rounded">
+            <li class="nav-item shadow-lg border rounded">
               <a class="nav-link" data-toggle="tab" href="#home">Patient Login</a>
             </li>
-            <li class="nav-item shadow-sm p-0 mb-0 bg-white rounded">
+            <li class="nav-item shadow-lg border rounded">
               <a class="nav-link active" data-toggle="tab" href="#menu1">Doctor Login</a>
             </li>
-            <li class="nav-item shadow-sm p-0 mb-0 bg-white rounded">
+            <li class="nav-item shadow-lg border rounded">
               <a class="nav-link" data-toggle="tab" href="#menu2">Medical Assistant</a>
             </li>
           </ul>
@@ -54,7 +72,7 @@
     <center>
       <div class="col-md-2"></div>
       <div class="col-md-8">
-        <div class="tab-content shadow-lg p-0 mb-0 bg-white rounded">
+        <div class="tab-content shadow-lg border rounded">
           <div id="home" class="container tab-pane"><br>
             <div class="container-fluid">
               <div class="row">
@@ -68,8 +86,10 @@
                         <tbody>
                           <tr>
                             <td><label for="pid">PID :</label></td>
-                            <td><input type="text" class="form-control form-rounded" id="pid" placeholder="Enter PID"
-                                name="pid"></td>
+                            <td>
+                              <input type="text" class="form-control form-rounded" id="pid" placeholder="Enter PID"
+                                name="pid">
+                            </td>
                           </tr>
                           <tr>
                             <td><label for="password">Password :</label></td>

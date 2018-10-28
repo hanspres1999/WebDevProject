@@ -22,7 +22,7 @@ div#top_nav a {
 }
 
 div#top_nav a:hover {
-    color: blue;
+    color: rgb(38, 78, 28);
 }
 
 div#top_nav a:before {
@@ -32,7 +32,7 @@ div#top_nav a:before {
     height: 4px;
     bottom: -3px;
     left: 0;
-    background-color: blue;
+    background-color: rgb(38, 0, 255);
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
