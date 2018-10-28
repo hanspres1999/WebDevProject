@@ -48,6 +48,7 @@
 
     $(document).on('click', '#prompt', function (event) {
       bootbox.confirm({
+        closeButton: false,
         message: "Do you really want to Logout ?",
         buttons: {
           cancel: {
@@ -66,15 +67,37 @@
         }
       });
     });
+
+    $(document).on('click', '#admin', function (event) {
+      bootbox.confirm({
+        closeButton: false,
+        message: "Open Admin Page ?",
+        buttons: {
+          cancel: {
+            label: '<i class="fa fa-times"></i> No',
+            className: 'btn-success'
+          },
+          confirm: {
+            label: '<i class="fa fa-check"></i> Yes',
+            className: 'btn-danger',
+          }
+        },
+        callback: function (result) {
+          if (result) {
+            window.open("/html/admin.html", "_self");
+          }
+        }
+      });
+    });
   </script>
 
   <head>
 
-  <body style="background-color:rgb(240, 232, 232)">
+  <body style="background-color:rgb(255, 238, 183)">
 
     <div class="primary-nav position-fixed" style="z-index: 1;">
       <button href="#" class="hamburger open-panel"> <span class="screen-reader-text">DSH</span></button>
-      <nav role="navigation" class="menu"> <a href="#" class="logotype">DSH<span> Group</span></a>
+      <nav role="navigation" class="menu"> <a href="#" class="logotype" id="admin">DSH<span> Group</span></a>
         <div class="overflow-container">
           <ul id="bar">
             <li><a href="new_patient">New Patient</a><span class="icon"><i class="fas fa-user-plus"></i></span></li>
