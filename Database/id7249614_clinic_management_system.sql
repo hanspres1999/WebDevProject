@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 25, 2018 at 06:19 PM
+-- Generation Time: Oct 28, 2018 at 11:53 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.0.26
 
@@ -58,9 +58,29 @@ CREATE TABLE `Doctor` (
 --
 
 INSERT INTO `Doctor` (`Login_ID`, `Passwd`) VALUES
+('dan', 'me'),
 ('david', 'david'),
 ('hansel', 'hansel'),
+('new', ''),
 ('shubham', 'shubham');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Medicine`
+--
+
+CREATE TABLE `Medicine` (
+  `Med_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `Med_ID` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `Medicine`
+--
+
+INSERT INTO `Medicine` (`Med_name`, `Med_ID`) VALUES
+('Oximoron', 1224);
 
 -- --------------------------------------------------------
 
@@ -71,16 +91,21 @@ INSERT INTO `Doctor` (`Login_ID`, `Passwd`) VALUES
 CREATE TABLE `Patient` (
   `Patient_ID` int(10) NOT NULL,
   `Passwd` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `Name` varchar(20) COLLATE utf8_unicode_ci NOT NULL
+  `Name` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `Age` int(3) NOT NULL,
+  `E_mail` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `Contact` int(10) NOT NULL,
+  `Address` varchar(100) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `Patient`
 --
 
-INSERT INTO `Patient` (`Patient_ID`, `Passwd`, `Name`) VALUES
-(0, '', ''),
-(1, 'sh', 'sh');
+INSERT INTO `Patient` (`Patient_ID`, `Passwd`, `Name`, `Age`, `E_mail`, `Contact`, `Address`) VALUES
+(0, '', '', 0, '', 0, ''),
+(64, 'Shubham', 'Shubham', 20, 'shubhamsapkal998@gma', 2147483647, 'Thane-West'),
+(62, 'hansel', 'hansel', 0, '', 0, '');
 
 -- --------------------------------------------------------
 
@@ -89,10 +114,10 @@ INSERT INTO `Patient` (`Patient_ID`, `Passwd`, `Name`) VALUES
 --
 
 CREATE TABLE `Visit_details` (
-  `Patient_ID` int(11) NOT NULL,
-  `Symptoms` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `Med_written` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `Comments` varchar(50) COLLATE utf8_unicode_ci NOT NULL
+  `Patient_ID` int(10) NOT NULL,
+  `Symptoms` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `Med_written` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `Comments` varchar(200) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -100,8 +125,7 @@ CREATE TABLE `Visit_details` (
 --
 
 INSERT INTO `Visit_details` (`Patient_ID`, `Symptoms`, `Med_written`, `Comments`) VALUES
-(0, '', '', ''),
-(1, '', 'tablet', 'come tommo!!');
+(62, 'cold', 'dloc', 'NA');
 
 --
 -- Indexes for dumped tables
@@ -123,29 +147,13 @@ ALTER TABLE `Doctor`
 -- Indexes for table `Patient`
 --
 ALTER TABLE `Patient`
-  ADD PRIMARY KEY (`Patient_ID`);
+  ADD KEY `Patient_ID` (`Patient_ID`);
 
 --
 -- Indexes for table `Visit_details`
 --
 ALTER TABLE `Visit_details`
   ADD PRIMARY KEY (`Patient_ID`);
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `Patient`
---
-ALTER TABLE `Patient`
-  ADD CONSTRAINT `Patient_ibfk_1` FOREIGN KEY (`Patient_ID`) REFERENCES `Visit_details` (`Patient_ID`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Constraints for table `Visit_details`
---
-ALTER TABLE `Visit_details`
-  ADD CONSTRAINT `Visit_details_ibfk_1` FOREIGN KEY (`Patient_ID`) REFERENCES `Patient` (`Patient_ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
